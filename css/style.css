@@ -1,0 +1,208 @@
+body {
+	font-family: 'Merrieweather Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	text-rendering: optimizeLegibility;
+}
+::selection {
+	background: #000000;
+	color: #ffffff;
+}
+::-moz-selection {
+	background: #000000;
+	color: #ffffff;
+}
+a {
+	text-decoration: none;
+}
+a:focus {
+    outline: none;
+}
+.content-wrap {
+	width: 96%;
+	max-width: 1280px;
+	margin: 0px auto;
+	position: relative;
+}
+.gutter-add {
+	padding: 0% .75%;
+}
+.gutter-remove {
+	padding: 0% 0%;
+}
+.mt-30 {
+	margin-top: 30px;
+}
+.mt-115 {
+	margin-top: 115px;
+}
+.mt-150 {
+	margin-top: 150px;
+}
+.mt-255 {
+	margin-top: 255px;
+}
+/* 
+===================================== 
+               BODY                 
+===================================== 
+*/
+.fullscreen-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	background-image: url('../img/brainlove-2048.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	-webkit-background-size: 	cover;
+	-moz-background-size: 		cover;
+	-o-background-size:		 	cover;
+	background-size: 			cover;
+}
+header {
+	z-index: 1;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 65px;
+}
+
+/*
+*********** h1 color animations ***********
+*/
+@-webkit-keyframes colorShift {
+	0% 		{ color: #f6b05b; }
+	20% 	{ color: #00e459; }
+	40%		{ color: #0065f2; }
+	60%		{ color: #E7078C; }
+	80% 	{ color: #c467fd; }
+	100% 	{ color: #f6b05b; }
+}
+@-moz-keyframes colorShift {
+	0% 		{ color: #f6b05b; }
+	20% 	{ color: #00e459; }
+	40%		{ color: #0065f2; }
+	60%		{ color: #E7078C; }
+	80% 	{ color: #c467fd; }
+	100% 	{ color: #f6b05b; }
+}
+@keyframes colorShift {
+	0% 		{ color: #f6b05b; }
+	20% 	{ color: #00e459; }
+	40%		{ color: #0065f2; }
+	60%		{ color: #E7078C; }
+	80% 	{ color: #c467fd; }
+	100% 	{ color: #f6b05b; }
+}
+
+
+@-webkit-keyframes bgShift {
+	0% 		{ background: #f6b05b; }
+	20% 	{ background: #00e459; }
+	40%		{ background: #0065f2; }
+	60%		{ background: #E7078C; }
+	80% 	{ background: #c467fd; }
+	100% 	{ background: #f6b05b; }
+}
+@-moz-keyframes bgShift {
+	0% 		{ background: #f6b05b; }
+	20% 	{ background: #00e459; }
+	40%		{ background: #0065f2; }
+	60%		{ background: #E7078C; }
+	80% 	{ background: #c467fd; }
+	100% 	{ background: #f6b05b; }
+}
+@keyframes bgShift {
+	0% 		{ background: #f6b05b; }
+	20% 	{ background: #00e459; }
+	40%		{ background: #0065f2; }
+	60%		{ background: #E7078C; }
+	80% 	{ background: #c467fd; }
+	100% 	{ background: #f6b05b; }
+}
+
+@-webkit-keyframes borderShift {
+	0% 		{ border: 1px solid #f6b05b; }
+	20% 	{ border: 1px solid #00e459; }
+	40%		{ border: 1px solid #0065f2; }
+	60%		{ border: 1px solid #E7078C; }
+	80% 	{ border: 1px solid #c467fd; }
+	100% 	{ border: 1px solid #f6b05b; }
+}
+@-moz-keyframes borderShift {
+	0% 		{ border: 1px solid #f6b05b; }
+	20% 	{ border: 1px solid #00e459; }
+	40%		{ border: 1px solid #0065f2; }
+	60%		{ border: 1px solid #E7078C; }
+	80% 	{ border: 1px solid #c467fd; }
+	100% 	{ border: 1px solid #f6b05b; }
+}
+@keyframes borderShift {
+	0% 		{ border: 1px solid #f6b05b; }
+	20% 	{ border: 1px solid #00e459; }
+	40%		{ border: 1px solid #0065f2; }
+	60%		{ border: 1px solid #E7078C; }
+	80% 	{ border: 1px solid #c467fd; }
+	100% 	{ border: 1px solid #f6b05b; }
+}
+
+h1 {
+	font-size: 52px;
+	font-weight: 700;
+	text-shadow: 2px 2px 5px rgba(0,0,0,1);
+
+	animation: 				colorShift 13s linear infinite;
+	-webkit-animation: 		colorShift 13s linear infinite;
+	-moz-animation: 		colorShift 13s linear infinite;
+}
+.bg-container {
+	width: 80%;
+	margin: 0 auto;
+	background: rgba(0,0,0,.75);
+	padding: 25px;
+	margin-top: 100px;
+	border: 1px solid #E7078C;
+
+	animation: 				borderShift 13s linear infinite;
+	-webkit-animation: 		borderShift 13s linear infinite;
+	-moz-animation: 		borderShift 13s linear infinite;
+}
+h3 {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 26px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,1);
+}
+.line-break {
+	display: block;
+	margin-top: 15px;
+}
+.main-CTA {
+	display: block;
+	width: 300px;
+	/*background: #00e459;*/
+	/*background: #E7078C;*/
+	animation: 				bgShift 13s linear infinite;
+	-webkit-animation: 		bgShift 13s linear infinite;
+	-moz-animation: 		bgShift 13s linear infinite;
+
+	color: #000000;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 20px;
+	border-radius: none;
+
+	-webkit-transition: 	border-radius .3s ease-out;
+	-moz-transition: 		border-radius .3s ease-out;
+	-o-transition: 			border-radius .3s ease-out;
+	-ms-transition: 		border-radius .3s ease-out;
+	transition: 			border-radius .3s ease-out;
+}
+.main-CTA:hover {
+	border-radius: 50px;
+}
